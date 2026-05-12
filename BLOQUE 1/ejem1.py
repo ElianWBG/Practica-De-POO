@@ -1,10 +1,10 @@
-# class Persona:
-#     def __init__(self, nombre,edad):
-#         self.nombre = nombre
-#         self.edad=edad
+class Cliente:
+    def __init__(self,id_cliente,nombre):
+        self.id_cliente = id_cliente
+        self.nombre=nombre
     
-#     def presentar(self):
-#         print(f"{self.nombre} y tengo {self.edad} años")
+    def presentar(self):
+        print(f"{self.nombre} y tengo {self.edad} años")
 
 
 # elian=Persona("Elian",22)
@@ -21,8 +21,7 @@ print("="*40)
 class Producto:
     def __init__(self, codigo, nombre, precio):
         if precio < 0:
-            # Si quieres que el programa siga, podrías imprimir un error en lugar de usar raise
-            # Pero para aprender, lo dejaremos positivo para que no se detenga
+            
             raise ValueError("El precio no puede ser negativo")
         self.codigo = codigo
         self.nombre = nombre
