@@ -3,9 +3,9 @@ def clasificar_personas():
     edad=int(input("Ingrese edad "))
     salario=int(input("Ingrese salario "))
     
-    if edad <=18:
+    if edad <18:
         print("Menor de edad")
-    elif edad<25:
+    elif edad>19 and edad<25:
         print("Joven")
     elif edad<64:
         print("Aduelto")
@@ -14,7 +14,7 @@ def clasificar_personas():
     
     if salario<500:
         print("Salario Bajo")
-    elif salario<1499:
+    elif salario<=1499:
         print("Salario medio")
     else:
         print("Salario Alto")
