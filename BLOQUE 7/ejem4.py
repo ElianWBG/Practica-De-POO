@@ -28,7 +28,7 @@ class ejem4:
         if n == 0:
             print(0)
             print("¡Despegue! 🚀")
-            return          # ← solo para, no retorna valor
+            return         # ← solo para, no retorna valor
         print(n)            # imprime el número actual
         ejem4.contar_regresiva(n-1)
     
